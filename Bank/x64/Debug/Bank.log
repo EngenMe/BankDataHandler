@@ -1,0 +1,12 @@
+﻿  Bank.cpp
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(9,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\GetIsYesNo.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Bank.cpp')
+  
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(134,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(549,23): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(452,1): warning C4715: 'FindClientIndex': not all control paths return a value
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(807,1): warning C4715: 'FindUserIndex': not all control paths return a value
+  Bank.vcxproj -> C:\Users\moham\source\repos\Bank\x64\Debug\Bank.exe
