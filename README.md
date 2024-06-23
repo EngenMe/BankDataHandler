@@ -1,14 +1,14 @@
 # BankDataHandler
 
-**BankDataHandler** is a robust C++ console application aimed at simulating a banking environment where users can manage client information and execute financial transactions. The program supports multiple user roles with varying permissions, enabling a realistic administrative scenario.
+**BankDataHandler** is designed to simulate a basic banking environment where users can manage clients, perform transactions, view balances, and update user information. It uses C++ for its backend logic and includes functionalities for user authentication, permission management, client CRUD operations, transaction logging, and interface communication.
 
 ## Features
 
-- Client management: Add, delete, update, and search for client information.
-- Transaction handling: Perform deposits, withdrawals, and check total balances.
-- User management: Add, delete, update, and find users with specific permissions.
-- Secure access: Users must log in with valid credentials to perform actions.
-- Detailed reports: Generate detailed lists of clients and transactions.
+- Client Management: Add, update, delete clients with account details.
+- Transactions: Perform deposit, withdrawal, transfer operations between accounts.
+- User Management: Manage users with different access permissions.
+- Transaction Logging: Log all transactions for audit purposes.
+- Interface Communication: Abstract interface for sending emails and SMS messages (In Progress).
 
 ## Installation
 
@@ -20,7 +20,7 @@ Ensure you have a C++ compiler that supports C++11 or later. Here are some optio
 To get started, clone this repository:
 
 ```bash
-git clone https://github.com/your-username/BankDataHandler.git
+git clone https://github.com/EngenMe/BankDataHandler.git
 cd BankDataHandler
 ```
 
