@@ -1,0 +1,7 @@
+﻿  Bank.cpp
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\Bank.cpp(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\clsClient.h(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\clsClient.h(9,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\Bank\Bank\clsString.h(33,25): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  Bank.vcxproj -> C:\Users\moham\source\repos\Bank\Bank\x64\Debug\Bank.exe

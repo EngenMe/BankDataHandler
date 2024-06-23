@@ -1,0 +1,11 @@
+Admin, Admin, admin.admin@Gmail.com, 999999999, Admin, dba^, -1
+Adli, Haddad, Adli@Gmail.com, 8983883, User1, ]^_`, 0
+Jamil, Adli, Jamil@gmail.com, 23123123, User2, ]^_`, 0
+Lina, Loay, Lina@gmail.com, 1234, User3, ]^_`, 0
+Mazem, Kareem, Mazin@gmail.com, 898234, User4, ]^_`, 0
+Mohammed, Abu-Hadhoud, Msa@Gmail.com, 838838, User5, ]^_`, 0
+Alia, Ali, M@gmail.com, 09388322, User6, ]^_`, 0
+me, me, me@gmail.com, 034729, engen, ]^_`, 29
+Ali, Mohamed, ali@gmail.com, 03729323, User101, ]^_`, 128
+new, new, new@g.com, 047932943, user_7, ]eea, 255
+1234, Moh, Yafa, 94321749, user_8, ]^_`, -1
