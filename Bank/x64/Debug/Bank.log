@@ -1,17 +1,19 @@
 ﻿  Bank.cpp
-C:\Users\moham\source\repos\Bank\Bank\clsString.h(32,25): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsUser.h(147,14): warning C4091: 'static ': ignored on left of 'clsUser::enSave' when no variable is declared
-C:\Users\moham\source\repos\Bank\Bank\clsUser.h(153,14): warning C4091: 'static ': ignored on left of 'clsUser::enPermissions' when no variable is declared
-C:\Users\moham\source\repos\Bank\Bank\clsUser.h(165,14): warning C4091: 'static ': ignored on left of 'clsUser::enAccessPermission' when no variable is declared
-C:\Users\moham\source\repos\Bank\Bank\clsDate.h(10,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\moham\source\repos\Bank\Bank\clsClientsListScreen.h(27,74): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsUsersListScreen.h(16,64): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsManageUsersScreen.h(107,102): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsTransferLogScreen.h(13,74): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsTotalBalancesScreen.h(39,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsTransactionsScreen.h(110,103): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsLoginRegisterScreen.h(20,78): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsMainScreen.h(161,98): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
-C:\Users\moham\source\repos\Bank\Bank\clsClient.h(279,1): warning C4715: 'clsClient::Save': not all control paths return a value
-C:\Users\moham\source\repos\Bank\Bank\clsUser.h(277,1): warning C4715: 'clsUser::Save': not all control paths return a value
-  Bank.vcxproj -> C:\Users\moham\source\repos\Bank\x64\Debug\Bank.exe
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsString.h(43,31): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsUser.h(163,17): warning C4091: 'static ': ignored on left of 'clsUser::enSave' when no variable is declared
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsUser.h(171,17): warning C4091: 'static ': ignored on left of 'clsUser::enPermissions' when no variable is declared
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsUser.h(186,17): warning C4091: 'static ': ignored on left of 'clsUser::enAccessPermission' when no variable is declared
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsDate.h(10,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsClientsListScreen.h(27,74): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsUsersListScreen.h(21,70): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsManageUsersScreen.h(108,55): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsTransferLogScreen.h(15,74): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsTotalBalancesScreen.h(53,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsTransactionsScreen.h(120,55): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsLoginRegisterScreen.h(21,78): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsListCurrenciesScreen.h(18,67): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsCurrencyExchangeScreen.h(104,55): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsMainScreen.h(176,55): warning C4267: 'argument': conversion from 'size_t' to 'short', possible loss of data
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsClient.h(279,1): warning C4715: 'clsClient::Save': not all control paths return a value
+C:\Users\moham\source\repos\BankDataHandler\Bank\clsUser.h(320,1): warning C4715: 'clsUser::Save': not all control paths return a value
+  Bank.vcxproj -> C:\Users\moham\source\repos\BankDataHandler\x64\Debug\Bank.exe

@@ -69,5 +69,18 @@ public:
 
         return str;
     }
+
+    // Static function to return an upper case of a given string
+    static std::string UpperAll(std::string str)
+    {
+        std::string upper_str = "";
+
+        for (char c : str)
+        {
+            upper_str += std::toupper(c);
+        }
+
+        return upper_str;
+    }
 };
 

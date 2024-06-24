@@ -8,6 +8,7 @@
 #include "clsDate.h"
 #include "clsClient.h"
 #include "clsNumber.h"
+#include "clsCurrency.h"
 
 class clsScreen
 {
@@ -92,6 +93,32 @@ protected:
         }
 
         return user_name;
+    }
+
+    // Function to read country name, with validation
+    static std::string ReadCountryName(std::string error_message, bool exist_case)
+    {
+        std::string country_name = clsString::ReadString("Enter country name: ");
+        while (clsCurrency::IsCurrencyExistByCountryName(country_name) != exist_case)
+        {
+            std::cout << error_message;
+            country_name = clsString::ReadString("Enter Another One: ");
+        }
+
+        return country_name;
+    }
+
+    // Function to read currency code, with validation
+    static std::string ReadCurrencyCode(std::string error_message, bool exist_case)
+    {
+        std::string currency_code = clsString::ReadString("Enter currency code: ");
+        while (clsCurrency::IsCurrencyExistByCurrencyCode(currency_code) != exist_case)
+        {
+            std::cout << error_message;
+            currency_code = clsString::ReadString("Enter Another One: ");
+        }
+
+        return currency_code;
     }
 
     // Function to read client information and populate a clsClient object
@@ -185,6 +212,18 @@ protected:
         std::cout << "\nUsername    : " << user.user_name;
         std::cout << "\nPassword    : " << user.password;
         std::cout << "\nPermissions : " << user.permissions;
+        std::cout << "\n___________________\n";
+    }
+
+    // Function to print currency information in card format
+    static void PrintCurrencyCard(clsCurrency currency)
+    {
+        std::cout << "\nCurrency:";
+        std::cout << "\n___________________";
+        std::cout << "\nCountry       : " << currency.GetCountryName();
+        std::cout << "\nCurrency Code : " << currency.GetCurrencyCode();
+        std::cout << "\nCurrency Name : " << currency.GetCurrencyName();
+        std::cout << "\nUSD Rate      : " << currency.GetUSDRate();
         std::cout << "\n___________________\n";
     }
 

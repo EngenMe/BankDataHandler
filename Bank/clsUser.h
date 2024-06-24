@@ -178,7 +178,8 @@ public:
         find_client = 16,
         transactions = 32,
         manage_users = 64,
-        login_register = 128
+        login_register = 128,
+        currency_exchange = 256
     };
 
     // Enum for access permission result

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "clsScreen.h"
-#include "clsEndScreen.h"
+#include "clsScreen.h" // Include necessary header file for clsScreen functionality
+#include "clsEndScreen.h" // Include screens for various menu options
 #include "clsLogoutScreen.h"
 #include "clsFindClientScreen.h"
 #include "clsClientsListScreen.h"
@@ -11,10 +11,12 @@
 #include "clsUpdateClientScreen.h"
 #include "clsTransactionsScreen.h"
 #include "clsLoginRegisterScreen.h"
+#include "clsCurrencyExchangeScreen.h"
 
 class clsMainScreen : protected clsScreen
 {
 private:
+	// Enum defining the main menu options
 	enum enMainMenueOptions
 	{
 		show_clients_list = 1,
@@ -25,118 +27,133 @@ private:
 		transactions,
 		manage_users,
 		login_register,
+		currency_exchange,
 		logout,
 		end
 	};
 
+	// Method to go back to the main menu after completing an action
 	static void _BackToMain()
 	{
-		std::cout << "Press Any Key to Back to Main . . . ";
+		std::cout << "Press Any Key to Return to Main Menu . . . ";
 		system("pause>0");
-		DisplayMainMenueScreen();
+		DisplayMainMenueScreen(); // Redisplay the main menu
 	}
 
+	// Methods to invoke screens for various menu options
 	static void _ShowClientsListScreen()
 	{
-		clsClientsListScreen::ShowClientsList();
-		_BackToMain();
+		clsClientsListScreen::ShowClientsList(); // Display the clients list screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowAddNewClientScreen()
 	{
-		clsAddNewClientScreen::AddNewClient();
-		_BackToMain();
+		clsAddNewClientScreen::AddNewClient(); // Display the add new client screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowDeleteClientScreen()
 	{
-		clsDeleteClientScreen::DeleteClient();
-		_BackToMain();
+		clsDeleteClientScreen::DeleteClient(); // Display the delete client screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowUpdateClientScreen()
 	{
-		clsUpdateClientScreen::UpdateClient();
-		_BackToMain();
+		clsUpdateClientScreen::UpdateClient(); // Display the update client screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowFindClientScreen()
 	{
-		clsFindClientScreen::FindClient();
-		_BackToMain();
+		clsFindClientScreen::FindClient(); // Display the find client screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowTransactionsScreen()
 	{
-		clsTransactionsScreen::DisplayTransactionsMenuScreen();
-		_BackToMain();
+		clsTransactionsScreen::DisplayTransactionsMenuScreen(); // Display the transactions screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowManageUsersScreen()
 	{
-		clsManageUsersScreen::DisplayManageUsersScreen();
-		_BackToMain();
+		clsManageUsersScreen::DisplayManageUsersScreen(); // Display the manage users screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowLoginRegisterScreen()
 	{
-		clsLoginRegisterScreen::ShowLoginRegister();
-		_BackToMain();
+		clsLoginRegisterScreen::ShowLoginRegister(); // Display the login/register screen
+		_BackToMain(); // Return to main menu
+	}
+
+	static void _ShowCurrencyExchangeScreen()
+	{
+		clsCurrencyExchangeScreen::ShowCurrencyExchange(); // Display the currency exchange screen
+		_BackToMain(); // Return to main menu
 	}
 
 	static void _ShowLogoutScreen()
 	{
-		clsLogoutScreen::ShowLogoutScreen();
+		clsLogoutScreen::ShowLogoutScreen(); // Display the logout screen
 	}
 
 	static void _ShowEndScreen()
 	{
-		clsEndScreen::ShowEndScreen();
+		clsEndScreen::ShowEndScreen(); // Display the end screen
 	}
 
+	// Method to perform the selected main menu option
 	static void _PerformMainMenueOption(enMainMenueOptions option)
 	{
 		switch (option)
 		{
 		case enMainMenueOptions::show_clients_list:
-			_ShowClientsListScreen();
+			_ShowClientsListScreen(); // Invoke method to show clients list screen
 			break;
 		case enMainMenueOptions::add_new_client:
-			_ShowAddNewClientScreen();
+			_ShowAddNewClientScreen(); // Invoke method to show add new client screen
 			break;
 		case enMainMenueOptions::delete_client:
-			_ShowDeleteClientScreen();
+			_ShowDeleteClientScreen(); // Invoke method to show delete client screen
 			break;
 		case enMainMenueOptions::update_client:
-			_ShowUpdateClientScreen();
+			_ShowUpdateClientScreen(); // Invoke method to show update client screen
 			break;
 		case enMainMenueOptions::find_client:
-			_ShowFindClientScreen();
+			_ShowFindClientScreen(); // Invoke method to show find client screen
 			break;
 		case enMainMenueOptions::transactions:
-			_ShowTransactionsScreen();
+			_ShowTransactionsScreen(); // Invoke method to show transactions screen
 			break;
 		case enMainMenueOptions::manage_users:
-			_ShowManageUsersScreen();
+			_ShowManageUsersScreen(); // Invoke method to show manage users screen
 			break;
 		case enMainMenueOptions::login_register:
-			_ShowLoginRegisterScreen();
+			_ShowLoginRegisterScreen(); // Invoke method to show login/register screen
+			break;
+		case enMainMenueOptions::currency_exchange:
+			_ShowCurrencyExchangeScreen(); // Invoke method to show currency exchange screen
 			break;
 		case enMainMenueOptions::logout:
-			_ShowLogoutScreen();
+			_ShowLogoutScreen(); // Invoke method to show logout screen
 			break;
 		case enMainMenueOptions::end:
-			_ShowEndScreen();
+			_ShowEndScreen(); // Invoke method to show end screen
 			break;
 		}
 	}
 
 public:
+	// Method to display the main menu screen
 	static void DisplayMainMenueScreen()
 	{
-		system("cls");
-		PrintHead("Main Menu");
+		system("cls"); // Clear console screen
+		PrintHead("Main Menu"); // Display header for main menu
 
+		// Vector containing options for the main menu
 		std::vector<std::string> v_options =
 		{
 			"Show Clients List",
@@ -147,12 +164,16 @@ public:
 			"Transactions",
 			"Manage Users",
 			"Login Register",
+			"Currency Exchange",
 			"Logout",
 			"End Programme"
 		};
-		PrintOptions(v_options);
 
+		PrintOptions(v_options); // Print options for the main menu
+
+		// Perform the selected main menu option based on user input
 		_PerformMainMenueOption(static_cast<enMainMenueOptions>(
 			clsNumber::ReadShortNumberBetween(1, v_options.size(), "Choose Action: ")));
 	}
 };
+
