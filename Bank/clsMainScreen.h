@@ -68,7 +68,7 @@ private:
 
 	static void _ShowTransactionsScreen()
 	{
-		clsTransactionsScreen::DisplayTransactionsMenueScreen();
+		clsTransactionsScreen::DisplayTransactionsMenuScreen();
 		_BackToMain();
 	}
 
